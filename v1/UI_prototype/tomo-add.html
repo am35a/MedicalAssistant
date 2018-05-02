@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title>главная - medassist</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- GFonts --> <!-- https://www.google.com/fonts#QuickUsePlace:quickUse/Script:cyrillic-ext -->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=cyrillic-ext,latin-ext">
+        <!-- MDL --> <!-- http://www.getmdl.io -->
+        <link rel="stylesheet"  type="text/css" href="https://storage.googleapis.com/code.getmdl.io/1.1.3/material.teal-red.min.css"> <!-- http://www.getmdl.io/customize/index.html -->
+        <script src="https://storage.googleapis.com/code.getmdl.io/1.1.3/material.min.js"></script>
+        <link rel="stylesheet"  type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- https://www.google.com/design/icons/ -->
+        <!-- jQuery --> <!-- https://developers.google.com/speed/libraries/#jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        
+        <!-- tmp -->
+        <!--link rel="stylesheet"  type="text/css" href="http://www.getmdl.io/assets/components.css"-->
+
+        <!-- main -->
+        <link rel="stylesheet"  type="text/css" href="css/style.css">
+        
+    </head>
+    <body>
+        <div class="mdl-layout mdl-js-layout">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout-icon"></div>
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout-title">medassist</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <nav class="mdl-navigation">
+                        <a class="material-icons mdl-navigation__link is-active" href="">notifications</a>
+                        <a class="mdl-navigation__link" href="">Discussions</a>
+                        <a class="mdl-navigation__link" href="">Tomography</a>
+                    </nav>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+                        <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+                            <i class="material-icons">search</i>
+                        </label>
+                        <div class="mdl-textfield__expandable-holder">
+                            <input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp" />
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <div class="mdl-layout-title-user-info">
+                    <i class="material-icons">edit</i>
+                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"
+                            style="background: url(http://i.kinja-img.com/gawker-media/image/upload/s--4rM0A8gD--/1221441470939320102.jpg) no-repeat center center / cover;">
+                        <!--i class="material-icons">edit</i-->
+                    </button>
+                </div>
+                <nav class="mdl-navigation mdl-components mdl-js-components">
+                    <a class="mdl-navigation__link icons is-active" href="">
+                        <i class="material-icons">notifications</i>
+                        Notifications
+                    </a>
+                    <a class="mdl-navigation__link icons" href="">
+                        <i class="material-icons">chat</i>
+                        Discussions
+                    </a>
+                    <a class="mdl-navigation__link icons" href="">
+                        <i class="material-icons">recent_actors</i>
+                        Tomography
+                    </a>
+                    <!--a class="mdl-navigation__link" href="">menu text link</a-->
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <div class="page-content mdl-grid">
+                    <div id="tomography-0" class="tomography-card mdl-card mdl-cell mdl-cell--12-col">
+                        <div class="mdl-card__title">
+                            <i class="material-icons">recent_actors</i>
+                            <h2 class="mdl-card__title-text">Load computed tomography</h2>
+                        </div>
+                        <div class="mdl-card__load-media">
+                            Select DICOM-files (or folder with files) and drag it here.
+                            <button class="mdl-button mdl-js-button mdl-button--accent">
+                                Browse files...
+                            </button>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <form>
+                                <div class="mdl-grid">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input type="text" class="mdl-textfield__input" id="edit_patientname" name="patientname">
+                                            <label for="edit_patientname" class="mdl-textfield__label">Patient Name*</label>
+                                            <span class="mdl-tooltip mdl-tooltip--validation" for="edit_patientname">
+                                                <span>Fill the field</span>
+                                            </span>
+                                        </div>
+                                        <!--Tomography Information-->
+                                        <div class="mdl-textfield mdl-js-textfield">
+                                            <textarea class="mdl-textfield__input" type="text" rows= "6" id="edit_tomoaddinfo" ></textarea>
+                                            <label class="mdl-textfield__label" for="sample5">Tomography description...</label>
+                                        </div>
+                                </div>
+                                <div class="mdl-grid">
+                                    <div class="mdl-cell mdl-cell--2-col"></div>
+                                    <div class="mdl-cell mdl-cell--8-col">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="sample1">
+                                            <label class="mdl-textfield__label" for="sample1">Type person name or email to transfer tomography...</label>
+                                        </div>
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--2-col"></div>
+                                    <div class="mdl-cell mdl-cell--12-col ts-grid_valign">
+                                        <ul class="ts-transfer-list mdl-list">
+                                            <li class="mdl-list__item">
+                                                <span>
+                                                    <label class="ts-list-radio mdl-radio mdl-js-radio" for="list-option-1">
+                                                        <input type="radio" id="list-option-1" class="mdl-radio__button" name="options" value="1" />
+                                                    </label>
+                                                </span>
+                                                <span class="mdl-list__item-primary-content">
+                                                    <i class="material-icons mdl-list__item-avatar">person</i>
+                                                    Bryan Cranston
+                                                </span>
+                                            </li>
+                                            <li class="mdl-list__item">
+                                                <span>
+                                                    <label class="ts-list-radio mdl-radio mdl-js-radio" for="list-option-2">
+                                                        <input type="radio" id="list-option-2" class="mdl-radio__button" name="options" value="1" />
+                                                    </label>
+                                                </span>
+                                                <span class="mdl-list__item-primary-content">
+                                                    <i class="material-icons mdl-list__item-avatar">person</i>
+                                                    Aaron Paul
+                                                </span>
+                                            </li>
+                                            <li class="mdl-list__item">
+                                                <span>
+                                                    <label class="ts-list-radio mdl-radio mdl-js-radio" for="list-option-3">
+                                                        <input type="radio" id="list-option-3" class="mdl-radio__button" name="options" value="1" />
+                                                    </label>
+                                                </span>
+                                                <span class="mdl-list__item-primary-content">
+                                                    <i class="material-icons mdl-list__item-avatar">person</i>
+                                                    Bob Odenkirk
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--div class="mdl-grid ts-grid_valign">
+                                    <label>Tomography exist days:</label>
+                                    <div class="mdl-cell mdl-cell--1-col">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                                            <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1">
+                                            <span class="mdl-radio__label">7</span>
+                                        </label>
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--1-col">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                                            <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2" checked>
+                                            <span class="mdl-radio__label">14</span>
+                                        </label>
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--1-col">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+                                            <input type="radio" id="option-3" class="mdl-radio__button" name="options" value="3">
+                                            <span class="mdl-radio__label">30</span>
+                                        </label>
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--1-col">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
+                                            <input type="radio" id="option-4" class="mdl-radio__button" name="options" value="4">
+                                            <span class="mdl-radio__label">60</span>
+                                        </label>
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--1-col">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-5">
+                                            <input type="radio" id="option-5" class="mdl-radio__button" name="options" value="5">
+                                            <span class="mdl-radio__label">90</span>
+                                        </label>
+                                    </div>
+                                </div-->
+                            </form>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <div class="mdl-layout-spacer"></div>
+                            <button class="mdl-button mdl-js-button mdl-button--accent">
+                                Save
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--accent">
+                                Leave
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

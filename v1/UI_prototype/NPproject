@@ -1,0 +1,51 @@
+<NotepadPlus>
+    <Project name="app.mobitoon">
+        <Folder name="css">
+            <File name="D:\~ MobiToon\app.site\css\font-awesome.css" />
+            <File name="D:\~ MobiToon\app.site\css\style.css" />
+        </Folder>
+        <Folder name="fonts">
+            <File name="D:\~ MobiToon\app.site\fonts\fontawesome-webfont.eot" />
+            <File name="D:\~ MobiToon\app.site\fonts\fontawesome-webfont.svg" />
+            <File name="D:\~ MobiToon\app.site\fonts\fontawesome-webfont.ttf" />
+            <File name="D:\~ MobiToon\app.site\fonts\fontawesome-webfont.woff" />
+            <File name="D:\~ MobiToon\app.site\fonts\fontawesome-webfont.woff2" />
+            <File name="D:\~ MobiToon\app.site\fonts\FontAwesome.otf" />
+        </Folder>
+        <Folder name="images">
+            <File name="D:\~ MobiToon\app.site\images\bkg_1.jpg" />
+        </Folder>
+        <Folder name="js">
+            <File name="D:\~ MobiToon\app.site\js\lang_switch.js" />
+        </Folder>
+        <File name="D:\~ MobiToon\app.site\index.html" />
+    </Project>
+    <Project name="tomoscope">
+        <Folder name="css">
+            <File name="css\font-awesome.css" />
+            <File name="css\style.css" />
+        </Folder>
+        <Folder name="fonts">
+            <File name="fonts\fontawesome-webfont.eot" />
+            <File name="fonts\fontawesome-webfont.svg" />
+            <File name="fonts\fontawesome-webfont.ttf" />
+            <File name="fonts\fontawesome-webfont.woff" />
+            <File name="fonts\fontawesome-webfont.woff2" />
+            <File name="fonts\FontAwesome.otf" />
+        </Folder>
+        <Folder name="images">
+            <File name="images\mdl_title_user_default_pic.png" />
+        </Folder>
+        <Folder name="js">
+            <File name="js\sing_up.js" />
+        </Folder>
+        <File name="index.html" />
+        <File name="repass.html" />
+        <File name="main.html" />
+        <File name="main-discusions.html" />
+        <File name="main-into-discusion.html" />
+        <File name="discusion-view.html" />
+        <File name="tomo-list.html" />
+        <File name="tomo-add.html" />
+    </Project>
+</NotepadPlus>

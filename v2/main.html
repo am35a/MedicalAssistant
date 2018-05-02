@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Main page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/038.css">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Adds HTML5 element support for earlier versions of IE -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+    <body class="array">
+       
+        <aside class="act-toggle-aside-nav obj-aside-nav array">
+            <div class="align-top full-width array">
+                <!--header class="aside-nav-avatar gap align-center array nowrap">
+                    <img src="http://icons.iconarchive.com/icons/hopstarter/face-avatars/128/Female-Face-FI-2-icon.png" width="92" height="92" alt="Username">
+                    <b class="align-middle">Username</b>
+                </header-->
+                <header class="aside-nav-user array vertical full-width hadding vaddingest">
+                    <a class="aside-nav-user-avatar align-center" href="settings.html" title="Settings">
+                        <img class="hargin vargin" src="http://icons.iconarchive.com/icons/hopstarter/face-avatars/128/Female-Face-FI-2-icon.png" width="128" height="128" alt="Username">
+                    </a>
+                    <b class="align-center vargin">Username A. Secondname</b>
+                    <nav class="array x-axis-center nargin">
+                        <a class="button background-transparent nargin" href="#">
+                            <i class="material-icons">contacts</i>
+                        </a>                        
+                        <a class="button background-transparent nargin hargin" href="#">
+                            <i class="material-icons">bookmark</i>
+                        </a>                        
+                        <a class="button background-transparent nargin" href="#">
+                            <i class="material-icons">live_help</i>
+                        </a>                        
+                    </nav>
+                </header>
+                <nav class="gap array x-axis-stretch">
+                    <a class="button array full-width" title="Event monitor">
+                        <i class="material-icons">view_module</i>
+                        <span class="grow content-center">Event monitor</span>
+                    </a>
+                    <a class="button array full-width" href="upload-dicom.html" title="Upload DICOM">
+                        <i class="material-icons">burst_mode</i>
+                        <span class="grow content-center">DICOM storage</span>
+                    </a>
+                </nav>
+                <nav class="gap array x-axis-stretch">
+<!--                    <span>DICOM manipulation</span>-->
+                    <a class="button array full-width" href="upload-dicom.html" title="Upload DICOM">
+                        <i class="material-icons">file_upload</i>
+                        <span class="grow content-center">Upload DICOM</span>
+                    </a>
+                    <a class="button array full-width" href="#" title="Redirect DICOM">
+                        <i class="material-icons">directions</i>
+                        <span class="grow content-center">Redirect DICOM</span>
+                    </a>
+                </nav>
+            </div>
+            <a class="button background-transparent align-bottom full-width gap" href="about.html" title="About us">&copy; 2018 DICOMassist</a>
+        </aside>
+
+            
+        <main class="act-toggle-aside-nav obj-main array full-width" role="main">
+            <nav class="obj-toggle-float-nav">
+<!--                <a href="#" class="button gap"><i class="material-icons rotate90">first_page</i></a>-->
+                <button class="act-jump-to-top gap" type="button"><i class="material-icons rotate90">first_page</i></button>
+            </nav>
+            <div class="obj-search full-width">
+                <form class="array full-width hadding vadding">
+                    <button class="obj-search-clear nargin background-transparent" type="reset"><i class="material-icons">clear_all</i></button>
+                    <input id="search-dicom-storage" class="grow nargin" placeholder="search" type="search"> <!--onkeyup="this.setAttribute('value', this.value);" value=""-->
+                    <button class="obj-search-start nargin background-transparent" type="submit"><i class="material-icons">search</i></button>
+                </form>
+            </div>
+
+            <div class="container align-middle array x-axis-justify">
+
+                <div class="incoming card array vertical">
+                    <div class="card-header full-width array nowrap">
+                        <a class="card-header-avatar" href="#" title="Username" style="background-image: url(http://icons.iconarchive.com/icons/hopstarter/face-avatars/128/Female-Face-FI-2-icon.png);"></a>
+                        <div class="array y-axis-middle">
+                            <a class="card-header-username full-width ellipsis" href="#" title="Username">Username</a>
+                            <time class="card-header-time" datetime="2014-09-25T12:00">2014.09.25 12:00</time>
+                        </div>
+                        <a class="button gap align-right align-middle" href="#"><i class="material-icons">more_vert</i></a>
+                    </div>
+                    <div class="card-body array equal">
+                        <h2 class="card-body-heading gap full-width">Header text here</h2>
+                        <figure class="card-body-media gap">
+                            <a href="please-enable-javascript.html"
+                                    onclick="javascript:actOpenDICOM(this);return false;"
+                                    data-expert="1"
+                                    data-dicom="1"
+                                    data-series="1"
+                                    data-start="16"
+                                    data-end="79"
+                                    data-ext="jpg"
+                                    data-url="media/dicom">
+                                <img src="media/dicom/1/1/1/16.jpg" alt="">
+                            </a>
+                            <figcaption>Slice 111 from 512</figcaption>
+                        </figure>
+                        <p class="card-body-text gap card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi rerum debitis laborum necessitatibus harum nobis eveniet illum libero a eius possimus, incidunt aspernatur alias.
+                        </p>
+                    </div>
+                    <div class="card-footer align-bottom array x-axis-justify">
+                        <a class="button gap" href="#"><i class="material-icons">photo_library</i></a>
+                        <a class="button gap" href="#"><i class="material-icons">assignment</i></a>
+                        <a class="button gap" href="#"><i class="material-icons">forum</i></a>
+                    </div>
+                </div>
+
+                <div class="_system card array vertical y-axis-justify background-warning">
+                    <div class="card-header full-width array nowrap">
+                        <a class="card-header-avatar" href="#" title="System notifications!" style="background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_warning_white_48px.svg);"></a>
+                        <div class="array y-axis-middle">
+                            <span class="card-header-username full-width ellipsis" href="#" title="Warning message">Warning message</span>
+                            <time class="card-header-time" datetime="2014-09-25T12:00">2014.09.25 12:00</time>
+                        </div>
+                        <a class="button gap align-right align-middle" href="#"><i class="material-icons">more_vert</i></a>
+                    </div>
+                    <div class="card-body array equal align-middle">
+                        <h2 class="card-body-heading gap full-width">Warning header here</h2>
+                        <p class="card-body-text gap card-text">
+                            System notification warning messages text here...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="_outgoing card array vertical background-primary">
+                    <div class="card-header full-width array nowrap">
+                        <a class="card-header-avatar" href="#" title="Username" style="background-image: url(http://icons.iconarchive.com/icons/hopstarter/face-avatars/128/Male-Face-C3-icon.png);"></a>
+                        <div class="array y-axis-middle">
+                            <a class="card-header-username full-width ellipsis" href="#" title="Username">Username</a>
+                            <time class="card-header-time" datetime="2014-09-25T12:00">2014.09.25 12:00</time>
+                        </div>
+                        <a class="button gap align-right align-middle" href="#"><i class="material-icons">more_vert</i></a>
+                    </div>
+                    <div class="card-body array equal">
+                        <h2 class="card-body-heading gap full-width">Header text here</h2>
+                        <figure class="card-body-media gap">
+                            <a href="please-enable-javascript.html"
+                                    onclick="javascript:actOpenDICOM(this);return false;"
+                                    data-expert="1"
+                                    data-dicom="1"
+                                    data-series="2"
+                                    data-start="40"
+                                    data-end="48"
+                                    data-ext="jpg"
+                                    data-url="media/dicom">
+                                <img src="media/dicom/1/1/2/40.jpg" alt="">
+                            </a>
+                            <figcaption>Slice 111 from 512</figcaption>
+                        </figure>
+                        <p class="card-body-text gap card-text">
+                            Lipsum dolor sit amet, consectetur adipisicing elit. Asperiores, amet labore magnam quia molestias id ut vitae, repudiandae, delectus distinctio porro est quo ex veniam ipsum vero minus?
+                        </p>
+                    </div>
+                    <div class="card-footer align-bottom array x-axis-justify">
+                        <a class="button gap" href="#"><i class="material-icons">photo_library</i></a>
+                        <a class="button gap" href="#"><i class="material-icons">assignment</i></a>
+                        <a class="button gap" href="#"><i class="material-icons">forum</i></a>
+                    </div>
+                </div>
+
+                <div class="_system card array vertical background-info">
+                    <div class="card-header full-width array nowrap">
+                        <a class="card-header-avatar" href="#" title="System notifications!" style="background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_info_white_48px.svg);"></a>
+                        <div class="array y-axis-middle">
+                            <span class="card-header-username full-width ellipsis" href="#" title="Information message">Information message</span>
+                            <time class="card-header-time" datetime="2014-09-25T12:00">2014.09.25 12:00</time>
+                        </div>
+                        <a class="button gap align-right align-middle" href="#"><i class="material-icons">more_vert</i></a>
+                    </div>
+                    <div class="card-body array equal align-middle">
+                        <h2 class="card-body-heading gap full-width">Information header here</h2>
+                        <p class="card-body-text gap card-text">
+                            System notification information messages text here...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="_system card array vertical background-info">
+                    <div class="card-header full-width array nowrap">
+                        <a class="card-header-avatar" href="#" title="System notifications!" style="background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_info_white_48px.svg);"></a>
+                        <div class="array y-axis-middle">
+                            <span class="card-header-username full-width ellipsis" href="#" title="Information message">Information message</span>
+                            <time class="card-header-time" datetime="2014-09-25T12:00">2014.09.25 12:00</time>
+                        </div>
+                        <a class="button gap align-right align-middle" href="#"><i class="material-icons">more_vert</i></a>
+                    </div>
+                    <div class="card-body array equal align-middle">
+                        <h2 class="card-body-heading gap full-width">Information header here</h2>
+                        <p class="card-body-text gap card-text">
+                            System notification information messages text here...
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+<!--      DICOM quick preview      -->
+            <div class="obj-opendicom">
+                <div class="container array vertical">
+                    <div class="act-opendicom-slice obj-opendicom-slice">
+                        <div class="obj-opendicom-slice-move">
+                            <div class="obj-opendicom-slice-flip">
+                                <div class="obj-opendicom-slice-rotate">
+                                    <div class="obj-opendicom-slice-zoom"><img class="obj-opendicom-slice-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="array x-axis-justify">
+<!--
+                        <div class="array vertical gap">
+                            <button class="button" type="button"><i class="material-icons">info_outline</i></button>
+                            <button class="button nargin" onclick="javascript:actRestoreDICOM();return false;" type="button"><i class="material-icons">settings_backup_restore</i></button>
+                            <button class="button nargin hide" type="button"><i class="material-icons">open_with</i></button>
+                        </div>
+-->
+                        <button class="button gap" onclick="javascript:actRestoreDICOM();return false;" type="button"><i class="material-icons">settings_backup_restore</i></button>
+                        <div class="obj-status gap align-middle">Status</div>
+                        <button class="button gap" onclick="javascript:actCloseDICOM();return false;" type="button"><i class="material-icons">close</i></button>
+                    </div>
+                    <div class="align-bottom array vertical">
+                        <div class="obj-opendicom-menuextra array pag x-axis-center">
+                            <div class="gap">
+                                <button class="obj-opendicom-fliphorizontal button nargin" onclick="javascript:actOpenDICOMFlipHorizontal();return false;" type="button"><i class="material-icons">flip</i></button>
+                                <button class="obj-opendicom-flipvertical button nargin" onclick="javascript:actOpenDICOMFlipVertical();return false;" type="button"><i class="material-icons rotate90">flip</i></button>
+                            </div>
+                            <button class="button gap" onclick="javascript:actOpenDICOMRotate();return false;" type="button"><i class="material-icons">rotate_right</i></button>
+                            <button class="obj-opendicom-motionspeed button gap" onclick="javascript:actOpenDICOMMotionSpeed();return false;" type="button"><i class="material-icons">slow_motion_video</i></button>
+                            <div class="gap">
+                                <button class="button nargin" onclick="javascript:actOpenDICOMZoomOut();return false;" type="button"><i class="material-icons">zoom_out</i></button>
+                                <button class="button nargin" onclick="javascript:actOpenDICOMZoomIn();return false;" type="button"><i class="material-icons">zoom_in</i></button>
+                            </div>
+                        </div>
+                        <div class="array x-axis-justify">
+                            <button class="button gap" ><i class="material-icons">chevron_left</i></button>
+                            <div class="gap">
+                                <button class="obj-opendicom-stopbackward button nargin" onclick="javascript:actOpenDICOMPlay(0);return false;" type="button"><i class="material-icons">stop</i></button>
+                                <button class="obj-opendicom-playbackward button nargin" onclick="javascript:actOpenDICOMPlay(-1);return false;" type="button"><i class="material-icons hlip">play_arrow</i></button>
+                                <button class="obj-opendicom-menuextraopen button nargin" onclick="javascript:actOpenDICOMExtraMenuToggle();return false;" type="button"><i class="material-icons">more_horiz</i></button>
+                                <button class="obj-opendicom-playforward button nargin" onclick="javascript:actOpenDICOMPlay(1);return false;" type="button"><i class="material-icons">play_arrow</i></button>
+                                <button class="obj-opendicom-stopforward button nargin" onclick="javascript:actOpenDICOMPlay(0);return false;" type="button"><i class="material-icons">stop</i></button>
+                            </div>
+                            <button class="button gap" type="button"><i class="material-icons">chevron_right</i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="obj-opendicom-statusbar"></div>
+                <div id="obj-opendicom-slice-preload"></div>
+            </div>
+
+    </body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/device.js"></script>
+
+
+    <script src="js/jquery.touchSwipe.min.js"></script> <!-- http://labs.rampinteractive.co.uk/touchSwipe/docs/index.html -->
+    <script src="js/jquery.device.asideNav.js"></script> <!-- Show or hide aside navigation -->
+    <script src="js/jquery.device.DICOMQuickPrev.js"></script><!-- DICOM quick preview -->
+    <script src="js/jquery.floatNav.js"></script><!-- Show or hide float navigation -->
+
+    <script src="js/jquery.mousewheel.min.js"></script>
+
+<!--      Fullscreen switcher for DICOM quick preview      -->
+    <script type="text/javascript">
+        function toggleFullScreen() {
+            var doc = window.document;
+            var docEl = doc.documentElement;
+            var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+            var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+            if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement)
+                requestFullScreen.call(docEl);
+            else
+                cancelFullScreen.call(doc);
+        }
+    </script>
+    
+</html>

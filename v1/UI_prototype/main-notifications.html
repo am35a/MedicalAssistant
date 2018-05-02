@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title>главная - medassist</title>
+        
+        <!-- GFonts --> <!-- https://www.google.com/fonts#QuickUsePlace:quickUse/Script:cyrillic-ext -->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=cyrillic-ext,latin-ext">
+        <!-- MDL --> <!-- http://www.getmdl.io -->
+        <link rel="stylesheet"  type="text/css" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.teal-red.min.css"> <!-- http://www.getmdl.io/customize/index.html -->
+        <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+        <link rel="stylesheet"  type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- https://www.google.com/design/icons/ -->
+        <!-- jQuery --> <!-- https://developers.google.com/speed/libraries/#jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        
+        <!-- tmp -->
+        <!--link rel="stylesheet"  type="text/css" href="http://www.getmdl.io/assets/components.css"-->
+
+        <!-- main -->
+        <link rel="stylesheet"  type="text/css" href="css/style.css">
+        
+    </head>
+    <body>
+        <div class="mdl-layout mdl-js-layout">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout-icon"></div>
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout-title">medassist</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <nav class="mdl-navigation">
+                        <a class="material-icons mdl-navigation__link" href="">notifications</a>
+                        <a class="mdl-navigation__link is-active" href="">Discussions</a>
+                        <a class="mdl-navigation__link" href="">Tomography</a>
+                    </nav>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+                        <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+                            <i class="material-icons">search</i>
+                        </label>
+                        <div class="mdl-textfield__expandable-holder">
+                            <input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp" />
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <div class="mdl-layout-title-user-info">
+                    <i class="material-icons">edit</i>
+                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"
+                            style="background: url(http://i.kinja-img.com/gawker-media/image/upload/s--4rM0A8gD--/1221441470939320102.jpg) no-repeat center center / cover;">
+                    </button>
+                </div>
+                <nav class="mdl-navigation mdl-components mdl-js-components">
+                    <a class="mdl-navigation__link icons" href="">
+                        <i class="material-icons">notifications</i>
+                        Notifications
+                    </a>
+                    <a class="mdl-navigation__link icons is-active" href="">
+                        <i class="material-icons">chat</i>
+                        Discussions
+                    </a>
+                    <a class="mdl-navigation__link icons" href="">
+                        <i class="material-icons">recent_actors</i>
+                        Tomography
+                    </a>
+                    <!--a class="mdl-navigation__link" href="">menu text link</a-->
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <section id="ts-notificatons" class="mdl-hide">
+                </section>
+                <section id="ts-discussions">
+                    <div class="page-content mdl-grid">
+                        <div id="discussion-grid-1232" class="discussions-grid mdl-cell mdl-cell--12-col">
+                            <div class="mdl-card__title">
+                                <span class="mdl-card-user__name">First Last</span>
+                                <button class="mdl-card-user__ico mdl-button mdl-js-button mdl-button--fab mdl-button--colored"></button>
+                                <i class="material-icons">notifications</i>
+                                <h2 class="mdl-card__title-text">You'v got message(comment, tomography, invite)</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                This text might describe the photo and provide further information, such as where and when it was taken.
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <div class="mdl-card__relise"><i class="material-icons">access_time</i>24.11.2015</div>
+                                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--accent">
+                                    <i class="material-icons">comment</i>
+                                </button>
+                                <span class="mdl-icon--counter">11</span>
+                                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--accent">
+                                    <i class="material-icons">share</i>
+                                </button>
+                                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--accent">
+                                    <!--i class="material-icons">favorite_border</i-->      <!-- if not in favorite -->
+                                    <i class="material-icons">favorite</i>                  <!-- if in favorite -->
+                                </button>
+                                <div class="mdl-layout-spacer"></div>
+                                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--accent">
+                                    <i class="material-icons">close</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

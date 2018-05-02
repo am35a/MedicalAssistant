@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>038 - The modern, simple and responsive lightweight CSS framework</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="038 the modern, simple and responsive CSS framework for web/app/software development">
+        <meta name="keywords" content="">
+        <meta name="author" content="Arthur A. Selimov">
+
+        <meta property="og:locale"              content="en-EN">
+        <meta property="og:type"                content="website">
+        <meta property="og:site_name"           content="MOBITOON">
+        <meta property="og:url"                 content="http://038.mobitoon.ru">
+        <meta property="og:title"               content="038 - responsive CSS framework">
+        <meta property="og:description"         content="038 the modern, simple and responsive CSS framework">
+        <meta property="og:image"               content="http://038.mobitoon.ru/img/share-logo.png">
+
+        <link rel="icon" type="image/png" href="img/favicon.png">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/038.css">
+
+        <!-- Adds HTML5 element support for earlier versions of IE -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body id="home">
+        <!--header>
+            <nav role="navigation">
+                <div class="container array">
+                    <a href="index.html#home" target="_self" title="038 home page" role="banner">
+                        <img src="img/logo.svg" alt="038" height="60px">
+                    </a>
+                    <a class="gap" href="examples.html" target="_self" title="Examples page" role="link">Examples</a>
+                    <a class="gap" href="http://www.mobitoon.ru" target="_self" title="About developers" role="link">About</a>
+                </div>
+            </nav>
+        </header-->
+
+
+        <main role="main">
+            <article class="container">
+                <header class="content-center">
+                    <h1>038</h1>
+                    <h2 class="array x-axis-center"><smallest class="six">The modern and responsive lightweight CSS framework</smallest></h2>
+                    <a class="button background-primary" href="http://038.mobitoon.ru/038.zip" title="Download CSS framework archive"><i class="material-icons">file_download</i> <span>Actually v2.0</span></a>
+                </header>
+
+                <hr>
+
+                <section class="array x-axis-center">
+                    <h2 class="twelve content-center"><small>Rush with 038!</small></h2>
+                    <div class="eight background-info">
+                        <p class="haddinger">If you're current framework dull or extra-lightweight and you are looking for something more... Get the <b>038</b>!</p>
+                        <p class="haddinger">Воснове <b>038</b> модель flex верстки. <b>038</b> имеет гибкую систему ячеек, it helps with buttons group, navbars, icons, colors and so on with actions without JavaScript. Внимание! <b>038</b> использует цсс переменные, а значит поддерживается современными браузерами.</p>
+                        <p class="haddinger"><b>038</b>  have best integration with touch slider such as Swiper, One Page Scroll, firstPage or other customizable plugins for desktop and mobile devices. You also use <b>038</b> for building amazing mobile apps on frameworks like Adobe PhoneGap.</p>
+                    </div>
+                </section>
+
+                <hr>
+
+                <div class="background-success">text 15px/24px</div>
+                <br>
+                <div class="background-success">2 line<br>text 48px</div>
+                <br>
+                <div><small class="background-success">text 15px/24px</small></div>
+                <br>
+                <div class="small background-success">text 15px/16px</div>
+                <br>
+                <div class="array background-success"><button class="gap">Button element</button></div>
+                <div class="array background-success"><button class="gap">Button<br>element</button></div>
+                <br>
+                <div class="array background-success"><button class="gap button-small">Button element</button></div>
+                <div class="array background-success"><button class="gap button-small">Button<br>element</button></div>
+                <hr>
+
+                <!-- Array-->
+                <h2>Array</h2>
+                <h3>Простой Массив</h3>
+                <p>простой массив может состоять из любого числа элеентов не имеющий ограничений по ширине и высоте</p>
+                <div class="array background-success">
+                    <div class="background-primary">first element</div>
+                    <div class="background-primary">second element</div>
+                    <div class="background-primary">third element</div>
+                    <div class="background-primary">fourth element</div>
+                </div>
+                <p>Элементы массива заполняет свободное пространство, но это не гарантирует одинаковую ширину</p>
+                <div class="array background-success estim">
+                    <div class="background-primary">first element</div>
+                    <div class="background-primary">second element</div>
+                    <div class="background-primary">third element</div>
+                    <div class="background-primary">fourth element</div>
+                </div>
+                <pre>estim</pre>
+                <p>Элементы массива могут быть одинаковой ширины (перенос на новую строку возможен)</p>
+                <div class="array background-success equal">
+                    <div class="background-primary">first element</div>
+                    <div class="background-primary">second element</div>
+                    <div class="background-primary">third element</div>
+                    <div class="background-primary">fourth element</div>
+                </div>
+                <pre>equal</pre>
+                <hr>
+                <p>элементы массива можно выравнивать по горизонтали, по умолчанию выравнивание левое</p>
+                <div class="array pag">
+                    <div class="three gap">
+                        <div class="array background-success x-axis-left" style="min-height: 120px;">
+                            <div class="background-primary">first element</div>
+                            <div class="background-primary">second element</div>
+                            <div class="background-primary">third element</div>
+                            <div class="background-primary">fourth element</div>
+                        </div>
+                        <pre>x-axis-left - значение по умолчанию</pre>
+                    </div>
+                    <div class="three gap">
+                        <div class="array background-success x-axis-center" style="min-height: 120px;">
+                            <div class="background-primary">first element</div>
+                            <div class="background-primary">second element</div>
+                            <div class="background-primary">third element</div>
+                            <div class="background-primary">fourth element</div>
+                        </div>
+                        <pre>x-axis-center</pre>
+                    </div>
+                    <div class="three gap">
+                        <div class="array background-success x-axis-right" style="min-height: 120px;">
+                            <div class="background-primary">first element</div>
+                            <div class="background-primary">second element</div>
+                            <div class="background-primary">third element</div>
+                            <div class="background-primary">fourth element</div>
+                        </div>
+                        <pre>x-axis-right</pre>
+                    </div>
+                    <div class="three gap">
+                        <div class="array background-success x-axis-justify" style="min-height: 120px;">
+                            <div class="background-primary">first element</div>
+                            <div class="background-primary">second element</div>
+                            <div class="background-primary">third element</div>
+                            <div class="background-primary">fourth element</div>
+                        </div>
+                        <pre>x-axis-justify</pre>
+                    </div>
+                    <div class="three gap">
+                        <div class="array background-success x-axis-inspace" style="min-height: 120px;">
+                            <div class="background-primary">first element</div>
+                            <div class="background-primary">second element</div>
+                            <div class="background-primary">third element</div>
+                            <div class="background-primary">fourth element</div>
+                        </div>
+                        <pre>x-axis-inspace</pre>
+                    </div>
+                </div>
+                <p>Элементы массива можно выравнивать по вертикали</p>
+                <div class="array pag">
+                    <div class="four gap">
+                        <div class="array background-success y-axis-stretch" style="min-height: 120px;">
+                            <div class="background-primary">first element</div>
+                            <div class="background-primary">second element</div>
+                            <div class="background-primary">third element</div>
+                            <div class="background-primary">fourth element</div>
+                        </div>
+                        <pre>y-axis-stretch - значение по умолчанию</pre>
+                    </div>
+                    <div class="four gap">
+                        <div class="array background-success y-axis-top" style="min-height: 120px;">
+                            <div class="background-primary">first element</div>
+                            <div class="background-primary">second element</div>
+                            <div class="background-primary">third element</div>
+                            <div class="background-primary">fourth element</div>
+                        </div>
+                        <pre>y-axis-top</pre>
+                    </div>
+                    <div class="four gap">
+                        <div class="array background-success y-axis-center" style="min-height: 120px;">
+                            <div class="background-primary">first element</div>
+                            <div class="background-primary">second element</div>
+                            <div class="background-primary">third element</div>
+                            <div class="background-primary">fourth element</div>
+                        </div>
+                        <pre>y-axis-center</pre>
+                    </div>
+                    <div class="four gap">
+                        <div class="array background-success y-axis-bottom" style="min-height: 120px;">
+                            <div class="background-primary">first element</div>
+                            <div class="background-primary">second element</div>
+                            <div class="background-primary">third element</div>
+                            <div class="background-primary">fourth element</div>
+                        </div>
+                        <pre>y-axis-bottom</pre>
+                    </div>
+                    <div class="four gap">
+                        <div class="array background-success y-axis-justify" style="min-height: 120px;">
+                            <div class="background-primary">first element</div>
+                            <div class="background-primary">second element</div>
+                            <div class="background-primary">third element</div>
+                            <div class="background-primary">fourth element</div>
+                        </div>
+                        <pre>y-axis-justify</pre>
+                    </div>
+                    <div class="four gap">
+                        <div class="array background-success y-axis-inspace" style="min-height: 120px;">
+                            <div class="background-primary">first element</div>
+                            <div class="background-primary">second element</div>
+                            <div class="background-primary">third element</div>
+                            <div class="background-primary">fourth element</div>
+                        </div>
+                        <pre>y-axis-inspace</pre>
+                    </div>
+                </div>
+                <hr>
+                <span>Элементы массива могут самостоятельно позиционироваться.</span>
+                <div class="array tmp background-success" style="min-height: 120px;">
+                    <div class="background-primary align-left align-top">left top</div>
+                    <div class="background-primary align-center align-top">center top</div>
+                    <div class="background-primary align-right align-top">right top</div>
+                </div>
+                <div class="array tmp background-success" style="min-height: 120px;">
+                    <div class="background-primary align-left align-middle">left middle</div>
+                    <div class="background-primary align-center align-middle">center middle</div>
+                    <div class="background-primary align-right align-middle">right middle</div>
+                </div>
+                <div class="array tmp background-success" style="min-height: 120px;">
+                    <div class="background-primary align-left align-bottom">left bottom</div>
+                    <div class="background-primary align-center align-bottom">center bottom</div>
+                    <div class="background-primary align-right align-bottom">right bottom</div>
+                </div>
+                <p>Элементы массива и сам массив могут иметь разрывы которые задаются глобально для всех массивов и элементах</p>
+                <div class="array background-success estim" style="min-height: 60px;">
+                    <div class="background-primary">first element</div>
+                    <div class="gap background-primary">second element</div>
+                    <div class="background-primary">third element</div>
+                    <div class="background-primary">fourth element</div>
+                </div>
+                <pre>gap</pre>
+                <hr>
+                <p>Вложенные массивы</p>
+                <div class="array background-info">
+                    <div class="three">
+                        three
+                    </div>
+                    <div class="nine array background-success equal">
+                        <div class="gap background-primary">first element</div>
+                        <div class="gap background-primary">second element</div>
+                        <div class="gap background-primary">third element</div>
+                        <div class="gap background-primary">fourth element</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="array pag">
+                    <div class="gap background-primary content-center one">one</div>
+                    <div class="gap background-primary content-center eleven">eleven</div>
+                    <div class="gap background-primary content-center two">two</div>
+                    <div class="gap background-primary content-center ten">ten</div>
+                    <div class="gap background-primary content-center three">three</div>
+                    <div class="gap background-primary content-center nine">nine</div>
+                    <div class="gap background-primary content-center four">four</div>
+                    <div class="gap background-primary content-center eight">eight</div>
+                    <div class="gap background-primary content-center five">five</div>
+                    <div class="gap background-primary content-center seven">seven</div>
+                    <div class="gap background-primary content-center six">six</div>
+                    <div class="gap background-primary content-center six">six</div>
+                    <div class="gap background-primary content-center twelve">twelve</div>
+                </div>
+
+            </article>
+
+            <section class="container">
+                <br>
+                <div class="array background-primary" style="height:160px;">
+                    <a class="button array x-axis-center x-axis-stretch y-axis-stretch" href="#">
+                        <span class="gap">Button text</span>
+                        <i class="material-icons background-info">add_shopping_cart</i>
+                    </a>
+                </div>
+                <br>
+                <button>
+                    <i class="material-icons background-info">add_shopping_cart</i>
+                </button>
+                <a class="button" href="#">
+                    <i class="material-icons background-info">add_shopping_cart</i>
+                </a>
+                <button>
+                    <span hidden>Hidden text</span>
+                    <i class="material-icons background-info">add_shopping_cart</i>
+                </button>
+                <a class="button" href="#">
+                    <i class="material-icons background-info">add_shopping_cart</i>
+                    <span hidden>Hidden text</span>
+                </a>
+                <div class="array inline">
+                    <a class="button" href="#">Button text</a>
+                    <a class="button" href="#"><i class="material-icons background-info">keyboard_arrow_down</i></a>
+                </div>
+                <a class="button" href="#">
+                    <i class="material-icons background-info">add_shopping_cart</i>
+                    <span>Button text</span>
+                </a>
+                <a class="button" href="#">
+                    <span>Button text</span>
+                    <i class="material-icons background-info">add_shopping_cart</i>
+                </a>
+                <a class="button" href="#">
+                    Button text
+                    <i class="material-icons background-info">add_shopping_cart</i>
+                </a>
+
+                <p>Buttons</p>
+                <a class="button" href="#">Anchor button</a>
+                <button>Button element</button>
+                <input type="button" value="Input button">
+                <p>System buttons</p>
+                <input type="reset">
+                <input type="submit">
+                <p>Color buttons</p>
+                <button class="background-primary">Simple button</button>
+                <button class="background-success">Simple button</button>
+                <button class="background-info">Simple button</button>
+                <button class="background-warning">Simple button</button>
+                <button class="background-danger">Simple button</button>
+                <p>Color text</p>
+                <button class="color-primary">Simple button</button>
+                <button class="color-success">Simple button</button>
+                <button class="color-info">Simple button</button>
+                <button class="color-warning">Simple button</button>
+                <button class="color-danger">Simple button</button>
+                <p>Check</p>
+                <label class="checkbox hargin">
+                    <input name="search-show-discussions" type="checkbox" checked="checked" hidden>
+                    <i class="material-icons check">check_box</i>
+                    <i class="material-icons uncheck">check_box_outline_blank</i>
+                    Discussions
+                </label>
+                <p>Radio</p>
+                <label class="radio hargin">
+                    <input name="search-discussions" type="radio" checked="checked" hidden>
+                    <i class="material-icons check">radio_button_checked</i>
+                    <i class="material-icons uncheck">radio_button_unchecked</i>
+                    radio one
+                </label>
+                <label class="radio hargin">
+                    <input name="search-discussions" type="radio" hidden>
+                    <i class="material-icons check">radio_button_checked</i>
+                    <i class="material-icons uncheck">radio_button_unchecked</i>
+                    radio two
+                </label>
+                <p>Form</p>
+                <form action="">
+                        <div class="array equal">
+                            <div>
+                                <fieldset>
+                                    <legend>Standart input types</legend>
+                                    <input type="text" placeholder="Text">
+                                    <br>
+                                    <input type="datetime-local" placeholder="Datetime local">
+                                    <br>
+                                    <input type="email" placeholder="Email">
+                                    <br>
+                                    <input type="month" placeholder="Month">
+                                    <br>
+                                    <input type="password" placeholder="Password">
+                                    <br>
+                                    <input type="search" placeholder="Search">
+                                    <br>
+                                    <input type="tel" placeholder="Phone number">
+                                    <br>
+                                    <input type="url" placeholder="URL">
+                                    <br>
+                                    <input type="week" placeholder="Week">
+                                </fieldset>
+                            </div>
+                            <div>
+                                <fieldset>
+                                    <legend>Different input types</legend>
+                                    <span>Color</span>
+                                    <br>
+                                    <input type="color" value="#cc0000">
+                                    <br>
+                                    <label class="type-color" for="colorize">
+                                        <input id="colorize" type="color" value="#cc0000">
+                                    </label>
+                                    <br>
+                                    <color>Date</color>
+                                    <br>
+                                    <input type="date" min="2018-01-02" max="2018-01-22" value="2018-01-11">
+                                    <br>
+                                    <span>Number</span>
+                                    <br>
+                                    <input type="number" min="-10" max="10" step="2" value="0">
+                                    <br>
+                                    <span>Range</span>
+                                    <!--http://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html-->
+                                    <br>
+                                    <input type="range" min="-500" max="500" step="50" value="0">
+                                    <br>
+                                    <span>time</span>
+                                    <br>
+                                    <input type="time">
+
+                                </fieldset>
+                            </div>
+                            <div>
+                                <fieldset>
+                                    <legend>Button input types</legend>
+                                    <input type="reset">
+                                    <br>
+                                    <input type="submit">
+                                    <br>
+                                    <span>File</span>
+                                    <br>
+                                    <label class="button" for="files">
+                                        <input type="file" id="files" multiple hidden>
+                                        <i class="material-icons">attach_file</i>
+                                        Select files
+                                    </label>
+                                    <br>
+                                    <span>Image</span>
+                                    <br>
+                                    <input class="button" width="38" height="38" type="image" src="https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_cancel_white_24px.svg" alt="Submit">
+                                    <br>
+                                    <label class="button" for="image">
+                                        <input class="nargin" type="image" src="https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_cancel_white_24px.svg" alt="Submit">
+                                        Input button
+                                    </label>
+
+                                </fieldset>
+                            </div>
+                            <div>
+                                ...
+                            </div>
+                        </div>
+                </form>
+            </section>
+        </main>
+        <footer role="contentinfo">
+            ...
+        </footer>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $( function(){
+            var outerHeight, scrollTop, elementTop, href, element;
+            $( 'a[href*="index.html#"]' ).click( function( event ){
+                event.preventDefault();
+                outerHeight = $( document ).outerHeight( true );
+                href = $( this ).attr( 'href' );
+                element = href.substring( href.indexOf( '#' ) );
+                scrollTop = $( document ).scrollTop();
+                elementTop = $( element ).offset().top;
+                $( 'body, html' ).animate( { 'scrollTop': elementTop - $( 'nav' ).height() }, Math.abs( 1500 * ( ( elementTop - scrollTop ) * 100 / outerHeight ) / 100 ) );
+            });
+            $('a[href="#"]').click( function( event ){
+                event.preventDefault();
+                $( document ).off( 'scroll' );
+                $( 'html, body' ).stop().animate( { 'scrollTop': $( this.hash ).offset().top }, function () { $( document ).on( 'scroll', onScroll ) } );
+            });
+        });
+    </script>
+</html>
+
+<!--http://shpargalkablog.ru/2016/05/flex.html-->
+<!--https://docs.emmet.io/cheat-sheet/-->
